@@ -61,21 +61,65 @@
       <div class="col-sm-3 p-3 bg-dark text-white">.col</div>
     </div>
   </div>
-  <p id='var-demo'></p>
+<p id='var-demo'></p>
 <script>
-    let i=5;
-    for (let i=0; i<10; i++)
-    {
+    var i=1;
 
+    for (let i=1; i<=10; i++)
+    {
+      console.log(i*2);
+      
     }
-    document.getElementById("var-demo").innerHTML= i;
+    //document.getElementById("var-demo").innerHTML= ;
 </script>
+<p id='vademo'></p>
+<script>
+    let Name= "Ashish";
+    let length=Name.length;
+    document.getElementById("vademo").innerHTML=length ;
+  </script>
 <p id="demo"></p>
 <script>
   function myFunction(a,b) {
     return a**b;
   }
   document.getElementById("demo").innerHTML=myFunction(10,8);
+</script>
+<script>
+  let a=18;
+  if (a>=18){
+    console.log("You can Vote.");
+  }
+  else{
+    console.log("You cannot Vote.");
+  }
+</script>
+<script>
+  let myDay = new Date().getDay();
+switch(myDay){
+case 0:
+console.log("Sunday");
+break;
+case 1:
+console.log("Monday");
+break;
+case 2:
+console.log("Tueday");
+break;
+case 3:
+console.log("Wednesday");
+break;
+case 4: console.log("Thursday");
+break;
+case 5:
+console.log("Friday");
+break;
+case 6:
+console.log("Saturday");
+break;
+default:
+console.log("Error");
+}
 </script>
 </body>
 </html>
